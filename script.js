@@ -17,5 +17,7 @@ else if ( signals === "/") {
     result = number1 / number2;
 }
 alert ( "СУММА: " + result );
+console.log(result);
+
 
 
