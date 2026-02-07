@@ -13,7 +13,7 @@ else if ( signals === "-") {
 else if ( signals === "*") {
     result = number1 * number2;
 }
-else if ( signals === "-") {
+else if ( signals === "/") {
     result = number1 / number2;
 }
 alert ( "СУММА: " + result );
