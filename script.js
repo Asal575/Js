@@ -1,6 +1,6 @@
-let number1 = prompt("Ведите первое слагаемое");
-let signals = prompt("Ведите операцию: + - * /");
-let number2 = prompt("Ведите второе слагаемое"); 
+let number1 = prompt("Ведите первое слагаемое").trim();
+let signals = prompt("Ведите операцию: + - * /").trim();
+let number2 = prompt("Ведите второе слагаемое").trim(); 
 number1 = Number(number1);
 number2 = Number(number2);
 let result;
