@@ -1,20 +1,21 @@
+let number1 = prompt("Ведите первое слагаемое");
+let signals = prompt("Ведите операцию: + - * /");
+let number2 = prompt("Ведите второе слагаемое"); 
+number1 = Number(number1);
+number2 = Number(number2);
+let result;
+if ( signals === "+") {
+    result = number1 + number2;
+}
+else if ( signals === "-") {
+    result = number1 - number2;
+}
+else if ( signals === "*") {
+    result = number1 * number2;
+}
+else if ( signals === "-") {
+    result = number1 / number2;
+}
+alert ( "СУММА: " + result );
 
-var name = prompt(" name ");
-var age = Number(prompt("age"));
-var gender = prompt(" gender ");
-if (age >= 18 && age <= 28 && gender === "man") {
-    console.log("Siz armiyada xizmat qila olasiz");
-}
-else {
-    console.log("Sizga armiyada xizmat qilish taluqli emas");
-}
-var been = prompt("been");
-if (been === "yes") {
-    console.log("Siz armiyaga xizmat qilishingiz shart emas");
-}
-else if (been === "no") {
-    console.log("siz armiyada xizmat qilishingiz shart");
-}
-else {
-    console.log( "Faqat 'yes' yoki 'no' yozing");
-}
+
