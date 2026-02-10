@@ -1,23 +1,15 @@
-let number1 = prompt("Ведите первое слагаемое").trim();
-let signals = prompt("Ведите операцию: + - * /").trim();
-let number2 = prompt("Ведите второе слагаемое").trim(); 
-number1 = Number(number1);
-number2 = Number(number2);
-let result;
-if ( signals === "+") {
-    result = number1 + number2;
+let name = prompt ("Ведите свое имя");
+if ( name === null ) {
+    alert ("Пожалуйста ведите свое имя!");
 }
-else if ( signals === "-") {
-    result = number1 - number2;
+else if (name.trim() === "") {
+    alert ("Пожалуйста ведите свое имя!");
 }
-else if ( signals === "*") {
-    result = number1 * number2;
+else if (name.trim().length < 3) {
+    alert ("Ваше имя слишком короткое пожалуйста напишите свое полное имя!");
 }
-else if ( signals === "/") {
-    result = number1 / number2;
+else {
+    console.log(`Здравствуйте ${name}!`);
 }
-alert ( "СУММА: " + result );
-console.log(result);
-
-
-
+let why = prompt ("Почему вы хотите поступить именно в этот университет?")
+console.log(why.replace(/universtitet/g, "alicode"));
