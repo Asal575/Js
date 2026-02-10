@@ -9,4 +9,4 @@ else {
     console.log(`Здравствуйте ${name}!`);
 }
 let why = prompt ("Почему вы хотите поступить именно в этот университет?")
-console.log(why.replace(/universtitet/g, "alicode"));
+console.log(why.replace(/университет/g, "alicode"));
