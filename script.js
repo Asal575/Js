@@ -1,12 +1,10 @@
-let name = prompt ("Ведите свое имя").trim();
-if (name === "") {
-    alert ("Пожалуйста ведите свое имя!").trim();
+var write = prompt ("Напишите что нибудь:").trim();
+if (write === write.toUpperCase()) {
+    console.log(write.toLowerCase());
 }
-else if (name.length < 3) {
-    alert ("Ваше имя слишком короткое пожалуйста напишите свое полное имя!").trim();
+else if (write === write.toLowerCase()) {
+    console.log(write.toUpperCase());
 }
 else {
-    console.log(`Здравствуйте ${name}!`);
+    console.log();
 }
-let why = prompt ("Почему вы хотите поступить именно в этот университет?")
-console.log(why.replace(/университет/g, "alicode"));
