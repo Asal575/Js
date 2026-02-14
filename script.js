@@ -1,10 +1,9 @@
-var write = prompt ("Напишите что нибудь:").trim();
-if (write === write.toUpperCase()) {
-    console.log(write.toLowerCase());
+let a = prompt ("Введите текст:");
+let c = prompt ("ВВедите букву (который вы сами пожелаете):")
+let d = 0;
+for ( let b = 0; b < a.length; b++) {
+    if (a[b] === c) {
+        d++;
+    }
 }
-else if (write === write.toLowerCase()) {
-    console.log(write.toUpperCase());
-}
-else {
-    console.log();
-}
+console.log("В тексте буква " + c + " было встречано " + d + " раз");
