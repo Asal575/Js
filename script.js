@@ -1,9 +1,12 @@
-let a = prompt ("Введите текст:");
-let c = prompt ("ВВедите букву (который вы сами пожелаете):")
-let d = 0;
-for ( let b = 0; b < a.length; b++) {
-    if (a[b] === c) {
-        d++;
+let text = prompt("Напиши текст").trim().toLowerCase();
+let notes = {};
+for ( let i = 0; i < text.length; i++ ) {
+    let a = text[i];
+    if (notes[a]) {
+        notes[a]++;
+    }
+    else {
+        notes[a] = 1;
     }
 }
-console.log("В тексте буква " + c + " было встречано " + d + " раз");
+console.log(notes);
